@@ -12,7 +12,7 @@ export default function App() {
       errorElement: <ErrorPage />,
       children: [
         {
-          path: "books/",
+          path: "books",
           element: <Books />,
         },
       ],

@@ -10,7 +10,7 @@ export default function Header(){
         <nav>
           <ul id="links">
             <li><Link to="/">Home</Link></li>
-            <li><Link to={"books"}>Books</Link></li>
+            <li><Link to="/books">Books</Link></li>
             <li><Link to="/profile">Profile</Link></li>
             <li><Link to="/signin">Sign In</Link></li>
           </ul>
