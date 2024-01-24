@@ -1,44 +1,12 @@
-/* Header.css */
+#header {
+  background-color: #f7f7f7;
+  border-right: solid 1px #e3e3e3;
+  display: flex; 
+}
 
-header {
+#links {
   display: flex;
+  align-items: stretch;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
+  width: 100%;
 }
-
-.logo {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: white;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-}
-
-.search-bar input {
-  padding: 8px;
-  margin-right: 10px;
-}
-
-.search-bar button {
-  padding: 8px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
