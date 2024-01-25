@@ -7,19 +7,20 @@ export default function SearchBar({ onSearch }){
     setSearchQuery(e.target.value)
   }
 
-  function handleSearch(){
+  function handleSearch(e){
+    e.preventDefault()
     onSearch(searchQuery)
   }
 
   return (
-    <>
+    <form onSubmit={handleSearch}>
       <input 
         type="text" 
         placeholder="Search"
         value={searchQuery}
         onChange={handleInputChange}
       />
-      <button onClick={handleSearch}>Search</button>
-    </>
+      <button type="submit">Search</button>
+    </form>
   )
 }
