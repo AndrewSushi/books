@@ -4,7 +4,7 @@ import axios from "axios"
 import SearchBar from "./SearchBar/SearchBar"
 
 export default function Books(){
-  const apiKey = import.meta.env.VITE_API_KEY
+  const apiKey = import.meta.env.VITE_BOOKS_API_KEY
  
   const [books, setBooks] = useState([])
   const [searchQuery, setSearchQuery] = useState('best sellers')
