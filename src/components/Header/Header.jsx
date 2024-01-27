@@ -51,7 +51,7 @@ export default function Header(){
           <ul id="links">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/books">Books</Link></li>
-            <li><Link to="/profile">Profile</Link></li>
+            {user && <li><Link to="/profile">Profile</Link></li>}
             <li>{user ? <SignOut /> : <SignIn />}</li>
           </ul>
         </nav>
