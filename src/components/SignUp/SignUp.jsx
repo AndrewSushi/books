@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import { projectAuth } from "../../firebase/config"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, redirect } from "react-router-dom"
 
 export default function SignUp(){
   const [email, setEmail] = useState('')
@@ -24,7 +24,7 @@ export default function SignUp(){
         const user = projectAuth.currentUser
 
         if(!res){
-          throw new Error("Could now complete sign up")
+          throw new Error("Could not complete sign up")
         }
 
         // add display name to user
